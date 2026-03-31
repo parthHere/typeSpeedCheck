@@ -1,50 +1,106 @@
+/* Background */
 body {
-    background: #0f172a;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #0f172a, #020617);
     color: white;
-    font-family: Arial;
+    font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
 }
 
+/* Main container */
 .container {
-    background: #1e293b;
-    padding: 30px;
-    border-radius: 15px;
+    background: rgba(30, 41, 59, 0.8);
+    backdrop-filter: blur(10px);
+    padding: 35px;
+    border-radius: 20px;
     width: 600px;
     text-align: center;
-    box-shadow: 0 0 20px rgba(0,0,0,0.5);
-    animation: fadeIn 1s ease-in;
+    box-shadow: 0 0 30px rgba(0,0,0,0.6);
+    animation: fadeIn 1s ease;
 }
 
+/* Title */
+h1 {
+    margin-bottom: 20px;
+}
+
+/* Sentence text */
+#sentence {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #cbd5f5;
+}
+
+/* Input box */
 textarea {
     width: 100%;
-    height: 100px;
-    margin-top: 15px;
-    border-radius: 10px;
-    padding: 10px;
+    height: 110px;
+    border-radius: 12px;
+    padding: 12px;
     border: none;
     outline: none;
     font-size: 16px;
+    resize: none;
 }
 
-button {
+/* Stats */
+.stats {
     margin-top: 15px;
-    padding: 10px 20px;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Button */
+button {
+    margin-top: 20px;
+    padding: 10px 25px;
     border: none;
     background: #22c55e;
     color: white;
-    border-radius: 10px;
+    font-size: 16px;
+    border-radius: 12px;
     cursor: pointer;
-    transition: 0.3s;
+    transition: all 0.3s ease;
 }
 
 button:hover {
-    transform: scale(1.05);
+    transform: scale(1.07);
+    background: #16a34a;
 }
 
+/* Footer */
+.footer {
+    position: fixed;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    color: #94a3b8;
+    font-size: 14px;
+}
+
+.footer a {
+    color: #22c55e;
+    text-decoration: none;
+    margin-left: 5px;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* Animation */
 @keyframes fadeIn {
-    from {opacity: 0; transform: translateY(20px);}
-    to {opacity: 1; transform: translateY(0);}
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
