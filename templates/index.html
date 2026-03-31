@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Typing App</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Typing Speed Test</h1>
+
+    <p id="sentence">{{ sentence }}</p>
+
+    <textarea id="input" placeholder="Start typing..."></textarea>
+
+    <div class="stats">
+        <span id="wpm">WPM: 0</span>
+        <span id="accuracy">Accuracy: 0%</span>
+    </div>
+
+    <button onclick="restart()">Restart</button>
+</div>
+
+<script src="/static/script.js"></script>
+</body>
+</html>
